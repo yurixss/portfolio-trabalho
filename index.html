@@ -7,8 +7,8 @@
     <title>Yuri | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        </style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Sofadi+One&display=swap');
+    </style>
 </head>
 <body>
     <nav>
@@ -16,27 +16,39 @@
             <li><a href="#informacoes-pessoais">Info</a></li>
             <li><a href="#objetivo">Objetivo</a></li>
             <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Formação</a></li>
+            <li><a href="#formacao">Competências</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li id="contato"><a href="https://wa.me/5543991401763" target="_blank">Contato</a></li>
 
             <li class="icones">
-                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/yuri-nunes-dev" target="_blank" title="LinkedIn">
                     <img src="src/img/linkedin.png" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/seu-perfil" target="_blank" title="GitHub">
+                <a href="https://github.com/yurixss" target="_blank" title="GitHub">
                     <img src="src/img/github.png" alt="GitHub">
                 </a>
+                <img src="src/img/br.png" alt="brasil"/>
+                <img src="src/img/eua.png" alt="eua"/>
             </li>
         </ul>
     </nav>
 
-    <div class="circulo"></div> 
 
     <header>
         <div class="nome">
             <h1>Olá, me chamo <br/> Yuri Matsumoto Nunes</h1>
-            <h2>Desenvolvedor Mobile</h2>
+            <h2>Desenvolvedor Mobile | Android | Java | React Native</h2>
+
+            <div class="icones-t">
+                <img class="tecnologias" src="src/img/java.webp" alt="java"/>
+                <img class="tecnologias" src="src/img/react-native.svg" alt="react"/>
+                <img class="tecnologias" src="src/img/typescript.png" alt="typescript"/>
+                <img class="icone-html-css-js" src="src/img/triple.png" alt="triple"/>
+                <img class="tecnologias" src="src/img/postgres.webp" alt="postgres"/>
+                <img class="tecnologias" src="src/img/android.png" alt="android"/>
+                <img class="tecnologias" src="src/img/apple.png" alt="apple"/>
+            </div>
         </div>
 
         <img src="src/img/foto-perfil.jpeg" alt="Foto perfil" class="foto-perfil">
@@ -45,31 +57,30 @@
     </header>
 
     <section id="info">
-        <h3>Informações Pessoais</h3>
-
         <div class="info">
             <p class="info-item"><strong>Idade:</strong> 22 anos</p>
             <p class="info-item"><strong>Nacionalidade:</strong> Brasileiro</p>
-            <a href="https://wa.me/5543991401763" target="_blank">  
+            <a class="telefone" href="https://wa.me/5543991401763" target="_blank">  
                 <p class="info-item">
                     <strong>Telefone: 43 99140-1763</strong>
                 </p> 
             </a>
-            <p class="info-item"><strong>Email:</strong> yuri.nunes.corp@gmail.com</p>
+            <p class="info-item">Email: <a class="email" href="mailto:yuri.nunes.corp@gmail.com">yuri.nunes.corp@gmail.com</a></p>
             <p class="info-item"><strong>Endereço:</strong> Londrina, PR</p>
         </div>
 
     </section>
 
+    <div class="linha"></div>
     <section id="objetivo">
         <h3>Objetivo Profissional</h3>
 
         <div class="objetivo-div">
             <p>Profissional com experiência em desenvolvimento Android e forte conhecimento em Java, buscando aplicar minhas habilidades em projetos inovadores.</p>
             <p>Sou um desenvolvedor de aplicativos com uma sólida formação em Java e React Native, focado na criação de soluções inovadoras e eficientes para desafios tecnológicos. Meu principal objetivo é aproveitar minhas habilidades técnicas e minha experiência prática para contribuir significativamente para projetos desafiadores, onde posso aplicar e expandir meus conhecimentos em desenvolvimento Android e React Native. <br/></p>
-            <p>Com uma formação robusta e experiência prática em desenvolvimento de aplicativos móveis, tenho o compromisso de criar experiências de usuário intuitivas e funcionais, alinhadas às melhores práticas da indústria. Estou constantemente em busca de novas tecnologias e abordagens para aprimorar meu trabalho e oferecer soluções de alta qualidade que atendam às necessidades dos usuários e superem suas expectativas.<br/></p>
         </div>
     </section>
+    <div class="linha"></div>
 
 
     <section id="experiencia">
@@ -78,13 +89,19 @@
 
         <div class="experiencia">
             <div class="experiencia-item">
-                <h4>Desenvolvedor Android Embarcado</h4>
+                <div class="flex-row" >
+                    <h4>Desenvolvedor Android</h4>
+                    <div class="tag">
+                        <p>Cargo atual</p>
+                    </div>
+                </div>
+
                 <p><em>Empresa Truckscontrol</em></p>
                 <p><em>Janeiro 2024 - Atual</em></p>
                 <p>Desenvolvimento de aplicativos móveis utilizando Java e integração com APIs REST. Responsável por melhorias contínuas e resolução de bugs.</p>
             </div>
             <div class="experiencia-item">
-                <h4>Desenvolvedor Full-Stack React</h4>
+                <h4>Desenvolvedor Full-Stack</h4>
                 <p><em>Empresa CargaOnline</em></p>
                 <p><em>Fevereiro 2023 - Dezembro 2023</em></p>
                 <p>Era responsável na implementação de interfaces, apis e novas funcionalidades para aplicativos em React Native</p>
@@ -96,7 +113,13 @@
                 <p>Era responsável na implementação de interfaces, apis e novas funcionalidades para aplicativos em React Native</p>
             </div>
             <div class="experiencia-item">
-                <h4>Estagiario Tester</h4>
+
+                <div class="flex-row" >
+                    <h4>Estagiario Tester</h4>
+                    <div class="tag">
+                        <p>Primeiro cargo</p>
+                    </div>
+                </div>
                 <p><em>Empresa Camsís</em></p>
                 <p><em>Novembro 2021 - Fevereiro 2022</em></p>
                 <p>Era responsável na implementação de interfaces, apis e novas funcionalidades para aplicativos em React Native</p>
@@ -110,23 +133,39 @@
         <h3 class="h3-center">Formação e Cursos</h3>
         <div class="formacao-div">
             <div class="formacao-item">
-                <h5>Engenharia de Software</h5> 
+                <div class="flex-row">
+                    <img class="formacao-icones" src="src/img/positivo.jpeg" alt="positivo">
+                    <h5>Engenharia de Software</h5> 
+                </div>
                 <p>Universidade Positivo (2024 - 2028)</p>
+                <p>Cursos:</p>
             </div>
             <div class="formacao-item">
-                <h5>Técnologo em Desenvolvimento Mobile</h5> 
+                <div class="flex-row">
+                    <img class="formacao-icones" src="src/img/unopar.jpg" alt="unopar">
+                    <h5>Desenvolvimento Mobile</h5> 
+                </div>
+           
                 <p>Universidade Unopar (2021 - 2023)</p>
-                <p>Aprendi</p>
+                <p>Cursos:</p>
             </div>
             <div class="formacao-item">
-                <h5>Cursos Alura</h5> 
-                <p>Mais de 50 cursos concluidos na plataforma Alura</p>
-                <p>Aprendi</p>
+                <div class="flex-row">
+                    <img class="formacao-icones" src="src/img/alura.png" alt="alura">
+                    <h5>Plataforma Alura</h5> 
+                </div>
+       
+                <p>Carga Horária: +200 horas</p>
+                <p>Cursos:</p>
             </div>
             <div class="formacao-item">
-                <h5>Curso Android embarcado</h5> 
-                <p>ST Micro Eletronics</p>
-                <p>70 horas de curso sobre Android embarcado</p>
+                <div class="flex-row">
+                    <img class="formacao-icones" src="src/img/labworks.webp" alt="unopar">
+                    <h5>Curso Android embarcado</h5> 
+                </div>
+
+                <p>E-Lab Works</p>
+                <p>Carga Horária: 24 horas</p>
             </div>
         </div>
 
@@ -134,7 +173,7 @@
 
 
     <section id="habilidades">
-        <h3 class="h3-center">Habilidades</h3>
+        <h3 class="h3-center">Competências</h3>
 
         <div class="habilidades-div">
                 <p class="habilidades-item">Desenvolvimento Android com Java</p>
@@ -157,26 +196,49 @@
                 <p class="habilidades-item">Documentacao de código com Swagger</p>
                 <p class="habilidades-item">Imnsonia</p>
                 <p class="habilidades-item">Ingles Avançado</p>
+                <p class="habilidades-item">Python</p>
+                <p class="habilidades-item">Javascript</p>
         </div>
 
     </section>
 
     <section id="projetos">
-        <h3>Projetos</h3>
-        <div class="projeto">
-            <h4>Aplicativo de marketplace de veiculos automotivos</h4>
-            <p>Aplicativo multiplataforma desenvolvido para ajudar os usuários a comprar e vender veiculos automotivos. Tecnologias: React Native, Typescript, Node.JS.</p>
-            <a href="link-do-projeto" target="_blank">Ver Projeto</a>
+        <h3 class="h3-center">Projetos</h3>
+        <div class="projeto-div">
+            <div class="projeto">
+                <h4>Aplicativo de marketplace de veiculos automotivos</h4>
+                <p>Aplicativo multiplataforma desenvolvido para ajudar os usuários a comprar e vender veiculos automotivos. <br/> Tecnologias utilizadas: React Native, Typescript, Node.JS, Postgres SQL</p>
+                <a href="https://github.com/yurixss/carchase-appv2" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class="projeto">
+                <h4>Aplicativo de Comunicação BLE</h4>
+                <p>Aplicativo android utilizado para comunicar e trafegar dados com outros dispositivos <br/> Tecnologias utilizadas: Java, Bluetooth Low Energy</p>
+                <a href="https://github.com/yurixss/carchase-appv2" target="_blank">Ver Projeto</a>
+            </div>
+    
+            <div class="projeto">
+                <h4>Aplicativo para assinatura digital</h4>
+                <p>Aplicativo multiplataforma utilizado para realizar assinaturas digitais. <br/> Tecnologias utilizadas: React Native, Typescript, Node.JS, Postgres SQL</p>
+                <a href="https://github.com/yurixss/carchase-appv2" target="_blank">Ver Projeto</a>
+            </div>
         </div>
     </section>
 
-    <section id="contato">
-        <h3>Contato</h3>
-        <p>Email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+    
+    <footer>
         <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/seu-perfil" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <ul>
+            <li class="icones">
+                <a href="https://www.linkedin.com/in/yuri-nunes-dev" target="_blank" title="LinkedIn">
+                    <img src="src/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/yurixss" target="_blank" title="GitHub">
+                    <img src="src/img/github.png" alt="GitHub">
+                </a>
+            </li>
+        </ul>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
