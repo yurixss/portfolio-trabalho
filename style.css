@@ -7,11 +7,12 @@
 
 body {
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
     margin: 20px 0;
     z-index: 10;
@@ -28,7 +29,7 @@ header h2 {
 }
 
 nav {
-    background-color: white;
+    background-color: #79dd7e;
     padding: 10px 0;
 }
 
@@ -54,8 +55,41 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.icones a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.icones img {
+    width: 24px; 
+    height: 24px; 
+    transition: opacity 0.3s;
+}
+
+.icones img:hover {
+    opacity: 0.8;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 300px;
+    height: 200px; 
+    object-fit: cover; 
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+}
+
 #contato {
-    background-color: #4CAF50;
+    background-color: #3a89c9;
     border-radius: 5px; 
 }
 
@@ -79,9 +113,44 @@ div.info {
     justify-content: space-around;
 }
 
-.experiencia-div {
+.info-item {
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #79dd7e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.experiencia-item {
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: #79dd7e;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+
+}
+
+.formacao-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formacao-item {
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: #2ecbaa;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    min-width: 400px;
 }
 
 .habilidades-div {
@@ -91,10 +160,24 @@ div.info {
     justify-content: space-evenly;
 }
 
+.habilidades-item {
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #79dd7e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 section h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #333;
+}
+
+.h3-center {
+    text-align: center;
 }
 
 .objetivo-div {
@@ -107,7 +190,7 @@ section p, section ul {
     color: #555;
 }
 
-.experiencia-item, .projeto {
+.projeto {
     background-color: white;
     padding: 15px;
     margin-bottom: 15px;
@@ -115,28 +198,9 @@ section p, section ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.experiencia-item h4, .projeto h4 {
+.experiencia-item h4, h5, .projeto h4 {
     font-size: 1.3rem;
     color: #333;
-}
-
-.redes-sociais {
-    margin-top: 10px;
-}
-
-.redes-sociais a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-.redes-sociais a:hover {
-    color: #0077b5;
-}
-
-.redes-sociais i {
-    margin-right: 5px;
 }
 
 footer {
@@ -150,29 +214,28 @@ footer {
 
 /* formas geometricas para background */
 .circulo {
-    width: 300px;
-    height: 300px;
-    background-color: orange;
+    width: 800px;
+    height: 390px;
+    background-color: #79dd7e;
     border-radius: 50%;
     position: absolute;
     top: 50px;
     left: 50px;
     z-index: 1;
     transform: translate(-50%, -50%);
-
 }
 
 .linha {
     width: 100%;
-    height: 1px;
-    background-color: orange;
+    height: 5px;
+    background-color: #ffc55f;
     z-index: 10;
 }
 
 .linha2 {
     width: 100%;
     height: 2px;
-    background-color: orange;
+    background-color: #ffc55f;
     z-index: 10;
 }
 
