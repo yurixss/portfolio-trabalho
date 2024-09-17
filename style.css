@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+#contato {
+    background-color: #4CAF50;
+    border-radius: 5px; 
+}
+
+#contato a {
+    color: white; 
+    text-decoration: none;
+}
+
+#contato a:hover {
+    text-decoration: underline; 
+}
+
+section {
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+div.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.experiencia-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.habilidades-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.objetivo-div {
+    padding: 20px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.experiencia-item, .projeto {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-item h4, .projeto h4 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.redes-sociais {
+    margin-top: 10px;
+}
+
+.redes-sociais a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.redes-sociais a:hover {
+    color: #0077b5;
+}
+
+.redes-sociais i {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+
+/* formas geometricas para background */
+.circulo {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: orange;
+    z-index: 10;
+}
+
+.linha2 {
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    z-index: 10;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+}
