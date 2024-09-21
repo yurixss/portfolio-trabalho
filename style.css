@@ -152,7 +152,7 @@ a.email {
 .experiencia {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .flex-row {
@@ -169,14 +169,13 @@ a.email {
     border-radius: 30px;
     background-color: #79dd7e;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-
+    width: 24%;
 }
 
 .formacao-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .formacao-item {
@@ -185,7 +184,7 @@ a.email {
     border-radius: 30px;
     background-color: #2ecbaa;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    min-width: 350px;
+    width: 24%;
 }
 
 .formacao-icones {
@@ -236,7 +235,7 @@ section p, section ul {
     margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
+    max-width: 30%;
 }
 
 .projeto-div {
